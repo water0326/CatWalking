@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+canvas {
+    position: absolute;
+    width: 100vh;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: rgb(45, 45, 45);
+    filter: blur(5px);
+    transition: filter 1s;
+}
+
+#screen {
+    position: absolute;
+    margin-top: 300px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#screen>span {
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    font-family: 'Gaegu', cursive;
+}
+
+#screen>button {
+    width: 240px;
+    height: 80px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    margin: auto;
+    font-family: 'Gaegu', cursive;
+    font-size: 60px;
+}
+
+#screen>button:hover {
+    color: gray;
+}
+
+#screen>button:active {
+    color: white;
+}
